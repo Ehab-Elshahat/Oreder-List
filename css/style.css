@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FBFBFB;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 20px  auto;
+  padding: 20px;
+}
+.title-page {
+  text-transform: capitalize;
+}
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.search-box input,
+.search-box button {
+  border: none;
+  padding: 15px 25px;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-right: 8px;
+  background-color: #8080804d;
+}
+.search-box input,
+.search-box button:focus {
+  outline: none;
+}
+.search-box input.one {
+  flex: 1;
+}
+.search-box input.tow {
+  flex: 3;
+}
+.search-box input.three {
+  flex: 3;
+}
+.search-box button {
+  flex: 1;
+  margin-right: 0;
+  cursor: pointer;
+  background: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,70,1) 100%);
+  color: #FFF;
+}
+table {
+  width: 100%;
+  text-align: left;
+  text-transform: capitalize;
+  border-collapse: collapse;
+  text-align: center;
+}
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table tr th {
+  color: #545353;
+}
+
+table tr td {
+  color: #5f5c5c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+table tr td img {
+  width: 50px;
+}
+
+table tr td .quantity {
+  padding: 5px;
+  border: 1px solid #5f5c5c69;
+}
+
+table tr td .order-status {
+  display: inline-block;
+  padding: 8px 23px;
+  background-color: #ffc107;
+  color: #FFF;
+  border-radius: 4px;
+}
+table tr td .order-status.confirmed {
+  background-color: #4caf50;
+  padding: 8px 16px ;
+}
+
+.container .control {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: #545353;
+  text-transform: capitalize;
+}
+
+.container .control .pags button {
+  border: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-transform: capitalize;
+  color: #545353;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.container .control .pags button:last-of-type {
+  margin-right: 0;
+}
+
+.container .control .pags button:focus {
+  outline: none;
+}
+
+.container .control .pags span {
+  display: inline-block;
+  padding:  5px 10px;
+  border: 1px solid #5f5c5c69;
+  font-weight: bold;
+}
+
+.container .control .pags span.active {
+  background-color: blueviolet;
+  color: #FFF;
+}
